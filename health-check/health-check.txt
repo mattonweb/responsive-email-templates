@@ -1,0 +1,27 @@
+=====================================================
+
+YOU'RE IN — NEXT STEPS BELOW
+
+Your server has successfully connected to the SMTP relay. The delivery of this email confirms that your server established a TCP connection to the relay and that the relay is reachable.
+
+=====================================================
+
+WHAT'S NEXT!
+
+View the message headers and locate the Authentication-Results header.
+
+1. SPF verifies that your domain authorizes the SMTP relay to send email on its behalf. Confirm it includes spf=pass.
+
+2. DKIM verifies that this email was digitally signed by your domain and was not altered in transit. Confirm it includes dkim=pass.
+
+3. DMARC verifies that the message complies with your domain’s authentication policy by ensuring SPF or DKIM alignment. Confirm it includes dmarc=pass.
+
+=====================================================
+
+WHY THIS MATTERS
+
+Email authentication (SPF, DKIM, and DMARC) verifies that your messages are legitimately sent from your domain and have not been spoofed or altered. It helps receiving mail systems trust your email by proving the sending server is authorized and the message content is intact. When authentication passes, your emails are far more likely to reach the inbox instead of being filtered as spam or rejected. It also protects your domain’s reputation and reduces the risk of it being used for phishing or fraud.
+
+=====================================================
+
+© All rights reserved.
